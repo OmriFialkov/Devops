@@ -1,0 +1,26 @@
+---
+- name: Set up Apache web server and deploy custom index.html
+  hosts: web_servers          # Define target hosts or group here
+  become: yes                 # Elevate privileges with sudo if necessary
+
+  vars:
+    html_file_path: "/path/to/your/index.html"  # Define variable for file path
+
+  tasks:
+    - name: Install Apache web server
+      apt:
+        name: apache2
+        state: present
+        update_cache: yes
+
+    - name: Start and enable Apache service
+      service:
+        name: apache2
+        state: started
+        enabled: yes
+
+    - name: Deploy custom index.html to the web server
+      copy:
+        src: "{{ html_file_path }}"   # Use the variable for the source file path
+        dest: /var/www/html/index.html
+        mode: '0644'                  # Set permissions for the file
