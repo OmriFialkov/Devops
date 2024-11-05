@@ -1,0 +1,20 @@
+---
+- name: Install packages on remote VM
+  hosts: myvm
+  become: yes
+  tasks:
+    - name: Install Git
+      apt:
+        name: git
+        state: present
+        update_cache: yes
+
+    - name: Install Apache2
+      apt:
+        name: apache2
+        state: present
+
+    - name: Install net-tools
+      apt:
+        name: net-tools
+        state: present
