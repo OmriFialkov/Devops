@@ -1,0 +1,138 @@
+omri88@OmriDevops:~/Desktop$ echo "Welcome To Linux" > my_file.txt
+omri88@OmriDevops:~/Desktop$ cat my_file.txt 
+Welcome To Linux
+omri88@OmriDevops:~/Desktop$ echo "learning redirection" >> my_file.txt
+omri88@OmriDevops:~/Desktop$ cat my_file.txt 
+Welcome To Linux
+learning redirection
+omri88@OmriDevops:~/Desktop$ ls omri.txt 2> error.txt
+omri88@OmriDevops:~/Desktop$ cat error.txt 
+ls: cannot access 'omri.txt': No such file or directory
+omri88@OmriDevops:~/Desktop$ ls /tmp
+config-err-JEg5Ak
+snap-private-tmp
+ssh-4ULQEEdwl7mE
+systemd-private-e8de332951b84910a7f57e7f66f4c028-colord.service-r7IuWg
+systemd-private-e8de332951b84910a7f57e7f66f4c028-ModemManager.service-t3xBAi
+systemd-private-e8de332951b84910a7f57e7f66f4c028-switcheroo-control.service-u8SYag
+systemd-private-e8de332951b84910a7f57e7f66f4c028-systemd-logind.service-gBWBeh
+systemd-private-e8de332951b84910a7f57e7f66f4c028-systemd-resolved.service-zPomcg
+systemd-private-e8de332951b84910a7f57e7f66f4c028-systemd-timesyncd.service-7XKPhf
+systemd-private-e8de332951b84910a7f57e7f66f4c028-upower.service-XPu7We
+tracker-extract-files.1000
+tracker-extract-files.126
+omri88@OmriDevops:~/Desktop$ ls /tmp &> output.txt
+omri88@OmriDevops:~/Desktop$ cat output.txt 
+config-err-JEg5Ak
+snap-private-tmp
+ssh-4ULQEEdwl7mE
+systemd-private-e8de332951b84910a7f57e7f66f4c028-colord.service-r7IuWg
+systemd-private-e8de332951b84910a7f57e7f66f4c028-ModemManager.service-t3xBAi
+systemd-private-e8de332951b84910a7f57e7f66f4c028-switcheroo-control.service-u8SYag
+systemd-private-e8de332951b84910a7f57e7f66f4c028-systemd-logind.service-gBWBeh
+systemd-private-e8de332951b84910a7f57e7f66f4c028-systemd-resolved.service-zPomcg
+systemd-private-e8de332951b84910a7f57e7f66f4c028-systemd-timesyncd.service-7XKPhf
+systemd-private-e8de332951b84910a7f57e7f66f4c028-upower.service-XPu7We
+tracker-extract-files.1000
+tracker-extract-files.126
+omri88@OmriDevops:~/Desktop$ ls /tmy &> output.txt
+omri88@OmriDevops:~/Desktop$ cat output.txt 
+ls: cannot access '/tmy': No such file or directory
+omri88@OmriDevops:~/Desktop$ echo $HOME
+/home/omri88
+omri88@OmriDevops:~/Desktop$ echo -e "hey class\t hello boys \nfuck you"
+hey class	 hello boys 
+fuck you
+omri88@OmriDevops:~/Desktop$ echo -e "hey class \t hello boys \n fuck you"
+hey class 	 hello boys 
+ fuck you
+omri88@OmriDevops:~/Desktop$ echo -e "hey class \t hello boys \nfuck you"
+hey class 	 hello boys 
+fuck you
+omri88@OmriDevops:~/Desktop$ echo -n "hey"
+heyomri88@OmriDevops:~/Desktop$ echo "heyyy"
+heyyy
+omri88@OmriDevops:~/Desktop$ echo "hello!" > grreting.txt
+omri88@OmriDevops:~/Desktop$ cat grreting.txt 
+hello!
+omri88@OmriDevops:~/Desktop$ echo "The quick brown fox jumps over the lazy dog.
+> Linux commands are very powerful and versatile.
+> Echo prints text and variables to the terminal.
+> Grep is used to search for patterns in text files.
+> Redirection changes where input or output is sent.
+> A command that fails will produce an error message.
+> Linux is an open-source operating system widely used.
+> Scripting in Linux allows automation of tasks.
+> Learning how to use command-line tools is essential.
+> Regular expressions can be used with grep for advanced searches.
+> "
+The quick brown fox jumps over the lazy dog.
+Linux commands are very powerful and versatile.
+Echo prints text and variables to the terminal.
+Grep is used to search for patterns in text files.
+Redirection changes where input or output is sent.
+A command that fails will produce an error message.
+Linux is an open-source operating system widely used.
+Scripting in Linux allows automation of tasks.
+Learning how to use command-line tools is essential.
+Regular expressions can be used with grep for advanced searches.
+
+omri88@OmriDevops:~/Desktop$ echo "The quick brown fox jumps over the lazy dog.
+Linux commands are very powerful and versatile.
+Echo prints text and variables to the terminal.
+Grep is used to search for patterns in text files.
+Redirection changes where input or output is sent.
+A command that fails will produce an error message.
+Linux is an open-source operating system widely used.
+Scripting in Linux allows automation of tasks.
+Learning how to use command-line tools is essential.
+Regular expressions can be used with grep for advanced searches." > sample.txt
+omri88@OmriDevops:~/Desktop$ cat sample.txt 
+The quick brown fox jumps over the lazy dog.
+Linux commands are very powerful and versatile.
+Echo prints text and variables to the terminal.
+Grep is used to search for patterns in text files.
+Redirection changes where input or output is sent.
+A command that fails will produce an error message.
+Linux is an open-source operating system widely used.
+Scripting in Linux allows automation of tasks.
+Learning how to use command-line tools is essential.
+Regular expressions can be used with grep for advanced searches.
+omri88@OmriDevops:~/Desktop$ grep Linux sample.txt 
+Linux commands are very powerful and versatile.
+Linux is an open-source operating system widely used.
+Scripting in Linux allows automation of tasks.
+omri88@OmriDevops:~/Desktop$ grep -i linux sample.txt 
+Linux commands are very powerful and versatile.
+Linux is an open-source operating system widely used.
+Scripting in Linux allows automation of tasks.
+omri88@OmriDevops:~/Desktop$ grep -c "Linux" sample.txt 
+3
+omri88@OmriDevops:~/Desktop$ grep -n "Linux" sample.txt 
+2:Linux commands are very powerful and versatile.
+7:Linux is an open-source operating system widely used.
+8:Scripting in Linux allows automation of tasks.
+omri88@OmriDevops:~/Desktop$ grep -v "Linux" sample.txt 
+The quick brown fox jumps over the lazy dog.
+Echo prints text and variables to the terminal.
+Grep is used to search for patterns in text files.
+Redirection changes where input or output is sent.
+A command that fails will produce an error message.
+Learning how to use command-line tools is essential.
+Regular expressions can be used with grep for advanced searches.
+omri88@OmriDevops:~/Desktop$ grep "automation" sample.txt > results.txt
+omri88@OmriDevops:~/Desktop$ cat results.txt 
+Scripting in Linux allows automation of tasks.
+omri88@OmriDevops:~/Desktop$ grep "Linux" sample.txt >> results.txt
+omri88@OmriDevops:~/Desktop$ cat results.txt 
+Scripting in Linux allows automation of tasks.
+Linux commands are very powerful and versatile.
+Linux is an open-source operating system widely used.
+Scripting in Linux allows automation of tasks.
+omri88@OmriDevops:~/Desktop$ echo "heyyy" > filetest1.txt && echo "wassup?" >> filetest1.txt && grep -c "Linux" sample.txt >> filetest1.txt
+omri88@OmriDevops:~/Desktop$ cat filetest1.txt 
+heyyy
+wassup?
+3
+omri88@OmriDevops:~/Desktop$ 
+

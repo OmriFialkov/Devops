@@ -1,0 +1,517 @@
+Script started on 2024-10-09 21:39:19+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ find . -type f -name "*.txt"
+./class3exercise1.txt
+./omri3work.txt
+./config.txt
+./csv1.txt
+./numbers.txt
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ grep -n "Linux" sample.txt[1@i[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[Kclass[K[K[K[K[KClass2Exercise 
+[32m[K1[m[K[36m[K:[m[Komri88@OmriDevops:~/Desktop$ echo "Welcome To [01;31m[KLinux[m[K" > my_file.txt
+[32m[K3[m[K[36m[K:[m[KWelcome To [01;31m[KLinux[m[K
+[32m[K6[m[K[36m[K:[m[KWelcome To [01;31m[KLinux[m[K
+[32m[K59[m[K[36m[K:[m[K> [01;31m[KLinux[m[K commands are very powerful and versatile.
+[32m[K64[m[K[36m[K:[m[K> [01;31m[KLinux[m[K is an open-source operating system widely used.
+[32m[K65[m[K[36m[K:[m[K> Scripting in [01;31m[KLinux[m[K allows automation of tasks.
+[32m[K70[m[K[36m[K:[m[K[01;31m[KLinux[m[K commands are very powerful and versatile.
+[32m[K75[m[K[36m[K:[m[K[01;31m[KLinux[m[K is an open-source operating system widely used.
+[32m[K76[m[K[36m[K:[m[KScripting in [01;31m[KLinux[m[K allows automation of tasks.
+[32m[K81[m[K[36m[K:[m[K[01;31m[KLinux[m[K commands are very powerful and versatile.
+[32m[K86[m[K[36m[K:[m[K[01;31m[KLinux[m[K is an open-source operating system widely used.
+[32m[K87[m[K[36m[K:[m[KScripting in [01;31m[KLinux[m[K allows automation of tasks.
+[32m[K92[m[K[36m[K:[m[K[01;31m[KLinux[m[K commands are very powerful and versatile.
+[32m[K97[m[K[36m[K:[m[K[01;31m[KLinux[m[K is an open-source operating system widely used.
+[32m[K98[m[K[36m[K:[m[KScripting in [01;31m[KLinux[m[K allows automation of tasks.
+[32m[K101[m[K[36m[K:[m[Komri88@OmriDevops:~/Desktop$ grep [01;31m[KLinux[m[K sample.txt 
+[32m[K102[m[K[36m[K:[m[K[01;31m[KLinux[m[K commands are very powerful and versatile.
+[32m[K103[m[K[36m[K:[m[K[01;31m[KLinux[m[K is an open-source operating system widely used.
+[32m[K104[m[K[36m[K:[m[KScripting in [01;31m[KLinux[m[K allows automation of tasks.
+[32m[K105[m[K[36m[K:[m[Komri88@OmriDevops:~/Desktop$ grep -i [01;31m[Klinux[m[K sample.txt 
+[32m[K106[m[K[36m[K:[m[K[01;31m[KLinux[m[K commands are very powerful and versatile.
+[32m[K107[m[K[36m[K:[m[K[01;31m[KLinux[m[K is an open-source operating system widely used.
+[32m[K108[m[K[36m[K:[m[KScripting in [01;31m[KLinux[m[K allows automation of tasks.
+[32m[K109[m[K[36m[K:[m[Komri88@OmriDevops:~/Desktop$ grep -c "[01;31m[KLinux[m[K" sample.txt 
+[32m[K111[m[K[36m[K:[m[Komri88@OmriDevops:~/Desktop$ grep -n "[01;31m[KLinux[m[K" sample.txt 
+[32m[K112[m[K[36m[K:[m[K2:[01;31m[KLinux[m[K commands are very powerful and versatile.
+[32m[K113[m[K[36m[K:[m[K7:[01;31m[KLinux[m[K is an open-source operating system widely used.
+[32m[K114[m[K[36m[K:[m[K8:Scripting in [01;31m[KLinux[m[K allows automation of tasks.
+[32m[K115[m[K[36m[K:[m[Komri88@OmriDevops:~/Desktop$ grep -v "[01;31m[KLinux[m[K" sample.txt 
+[32m[K125[m[K[36m[K:[m[KScripting in [01;31m[KLinux[m[K allows automation of tasks.
+[32m[K126[m[K[36m[K:[m[Komri88@OmriDevops:~/Desktop$ grep "[01;31m[KLinux[m[K" sample.txt >> results.txt
+[32m[K128[m[K[36m[K:[m[KScripting in [01;31m[KLinux[m[K allows automation of tasks.
+[32m[K129[m[K[36m[K:[m[K[01;31m[KLinux[m[K commands are very powerful and versatile.
+[32m[K130[m[K[36m[K:[m[K[01;31m[KLinux[m[K is an open-source operating system widely used.
+[32m[K131[m[K[36m[K:[m[KScripting in [01;31m[KLinux[m[K allows automation of tasks.
+[32m[K132[m[K[36m[K:[m[Komri88@OmriDevops:~/Desktop$ echo "heyyy" > filetest1.txt && echo "wassup?" >> filetest1.txt && grep -c "[01;31m[KLinux[m[K" sample.txt >> filetest1.txt
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ a[Kcat csv1.txt 
+Employee ID,First Name,Last Name,Department,Salary
+1001,John,Doe,Engineering,75000
+1002,Jane,Smith,Marketing,60000
+1003,Robert,Johnson,Finance,80000
+1004,Emily,Williams,Engineering,72000
+1005,Michael,Brown,Marketing,58000
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ awk -F, "[K'{print $2}' csv1.txt 
+First Name
+John
+Jane
+Robert
+Emily
+Michael
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ cat config.txt 
+2023-09-29 09:15: Debug information: debug=true - Module A initialized.
+2023-09-29 09:30: Debug information: debug=true - Processing data.
+2023-09-29 09:45: Info: Application started.
+2023-09-29 10:00: Debug information: debug=true - Module B initialized.
+2023-09-29 10:15: Debug information: debug=true - Running diagnostics.
+2023-09-29 10:30: Error: An error occurred in Module C.
+2023-09-29 10:45: Debug information: debug=true - Processing complete.
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ sed 's/debug=true/debug-f[K[K=false/' config.txt 
+2023-09-29 09:15: Debug information: debug=false - Module A initialized.
+2023-09-29 09:30: Debug information: debug=false - Processing data.
+2023-09-29 09:45: Info: Application started.
+2023-09-29 10:00: Debug information: debug=false - Module B initialized.
+2023-09-29 10:15: Debug information: debug=false - Running diagnostics.
+2023-09-29 10:30: Error: An error occurred in Module C.
+2023-09-29 10:45: Debug information: debug=false - Processing complete.
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ sed 's/debug=true/debug=false/' config.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28Pcat[C[C[C[C[C[C[C[C[C[C[C[C
+2023-09-29 09:15: Debug information: debug=true - Module A initialized.
+2023-09-29 09:30: Debug information: debug=true - Processing data.
+2023-09-29 09:45: Info: Application started.
+2023-09-29 10:00: Debug information: debug=true - Module B initialized.
+2023-09-29 10:15: Debug information: debug=true - Running diagnostics.
+2023-09-29 10:30: Error: An error occurred in Module C.
+2023-09-29 10:45: Debug information: debug=true - Processing complete.
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ cat config.txt [28@sed 's/debug=true/debug=false/'[C[C[C[C[C[C[C[C[C[C[C[C[C[1@g[C[1@ [1@-[1@i
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ sed -i 's/debug=true/debug=false/g' config.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat config.txt [K
+2023-09-29 09:15: Debug information: debug=false - Module A initialized.
+2023-09-29 09:30: Debug information: debug=false - Processing data.
+2023-09-29 09:45: Info: Application started.
+2023-09-29 10:00: Debug information: debug=false - Module B initialized.
+2023-09-29 10:15: Debug information: debug=false - Running diagnostics.
+2023-09-29 10:30: Error: An error occurred in Module C.
+2023-09-29 10:45: Debug information: debug=false - Processing complete.
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ du -sh .
+104K	.
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ cat numbers.txt 
+1
+5
+2
+11
+8
+14
+20
+17
+3
+error
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ sort -rn [K[K[Knr numbers.txt 
+20
+17
+14
+11
+8
+5
+3
+2
+1
+error
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ head -5 Class2Exercise 
+omri88@OmriDevops:~/Desktop$ echo "Welcome To Linux" > my_file.txt
+omri88@OmriDevops:~/Desktop$ cat my_file.txt 
+Welcome To Linux
+omri88@OmriDevops:~/Desktop$ echo "learning redirection" >> my_file.txt
+omri88@OmriDevops:~/Desktop$ cat my_file.txt 
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ tail -n 4 -f omri[K[K[K[Kcsv1.txt
+1002,Jane,Smith,Marketing,60000
+1003,Robert,Johnson,Finance,80000
+1004,Emily,Williams,Engineering,72000
+1005,Michael,Brown,Marketing,58000
+
+^Z
+[1]+  Stopped                 tail -n 4 -f csv1.txt
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ wc -w Important_Commands 
+142 Important_Commands
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ grep -ro "error" . | wc -l
+157
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ grep -ro "error" . | wc -l[K[K[K[K[K[K[K[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./class3exercise1.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./Important_Commands[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./Important_Commands[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./omri3work.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./config.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./numbers.txt[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./Class2Exercise[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./Class2Exercise[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./Class2Exercise[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./Class2Exercise[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./Class2Exercise[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./Class2Exercise[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+[35m[K./Class2Exercise[m[K[36m[K:[m[K[01;31m[Kerror[m[K
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ grep -ro "error" .[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kfind . -type f -name "*.txt" | xargs grep -c "error" | awk -F: '{print $2}' | awk '{sum += $1} END {print sum}'
+463
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ find . -type f -name "*.txt" | xargs grep -c "error" | awk -F: '{print $2}' | awk '{sum += $1} END {print sum}'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[33Pgrep -ro "error" .
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | wc -l
+493
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ exit
+There are stopped jobs.
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ exit
+
+Script done on 2024-10-09 22:03:10+03:00 [COMMAND_EXIT_CODE="0"]

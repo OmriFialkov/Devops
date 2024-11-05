@@ -1,0 +1,139 @@
+Script started on 2024-10-13 12:16:41+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ adduser user1
+adduser: Only root may add a user or group to the system.
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ sudo useradd[K[K[K[K[K[K[Kadduser user1
+[sudo] password for omri88: 
+Adding user `user1' ...
+Adding new group `user1' (1001) ...
+Adding new user `user1' (1001) with group `user1' ...
+Creating home directory `/home/user1' ...
+Copying files from `/etc/skel' ...
+New password: 
+Retype new password: 
+passwd: password updated successfully
+Changing the user information for user1
+Enter the new value, or press ENTER for the default
+	Full Name []: 
+	Room Number []: 
+	Work Phone []: 
+	Home Phone []: 
+	Other []: 
+Is the information correct? [Y/n] y
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ u[Ksudo useradd user2
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ user[K[K[K[Kcd [K[K[Kls -d /home
+[0m[01;34m/home[0m
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ ls -d /home[K[K[K[K[K[K[K[K[K[K[Kls[K[Kcd ../../
+]0;omri88@OmriDevops: /home[01;32momri88@OmriDevops[00m:[01;34m/home[00m$ ls
+[0m[01;34momri88[0m  [01;34muser1[0m
+]0;omri88@OmriDevops: /home[01;32momri88@OmriDevops[00m:[01;34m/home[00m$ cd /home/omri88/Desktop
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ users[K[K[K[K[Kduso[K[K[K[Ksudo userdel user2
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ sudo userdel user2
+userdel: user 'user2' does not exist
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ sudp[Ko useradd -ms /bin/bash user2
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ passwd user2
+passwd: You may not view or modify password information for user2.
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ passwd user2[1@s[1@u[1@d[1@o[1@ 
+New password: 
+Retype new password: 
+passwd: password updated successfully
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ su user1
+Password: 
+]0;user1@OmriDevops: /home/omri88/Desktop[01;32muser1@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ su user2
+Password: 
+]0;user2@OmriDevops: /home/omri88/Desktop[01;32muser2@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ sudo su user1
+[sudo] password for user2: 
+user2 is not in the sudoers file.  This incident will be reported.
+]0;user2@OmriDevops: /home/omri88/Desktop[01;32muser2@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ cdh[K[K[Kusermod -aG sudo user1
+usermod: Permission denied.
+usermod: cannot lock /etc/passwd; try again later.
+]0;user2@OmriDevops: /home/omri88/Desktop[01;32muser2@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ usermod -aG sudo user1[1@s[C[1@u[1@d[1@o[1@ 
+[sudo] password for user2: 
+user2 is not in the sudoers file.  This incident will be reported.
+]0;user2@OmriDevops: /home/omri88/Desktop[01;32muser2@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ su
+Password: 
+]0;root@OmriDevops: /home/omri88/Desktoproot@OmriDevops:/home/omri88/Desktop# usermod -aG sudo user1
+]0;root@OmriDevops: /home/omri88/Desktoproot@OmriDevops:/home/omri88/Desktop# usermod -aG sudo user1[K2
+]0;root@OmriDevops: /home/omri88/Desktoproot@OmriDevops:/home/omri88/Desktop# exit
+exit
+]0;user2@OmriDevops: /home/omri88/Desktop[01;32muser2@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ su user1
+Password: 
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+]0;user1@OmriDevops: /home/omri88/Desktop[01;32muser1@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ groups
+user1 sudo
+]0;user1@OmriDevops: /home/omri88/Desktop[01;32muser1@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ su user2
+Password: 
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+]0;user2@OmriDevops: /home/omri88/Desktop[01;32muser2@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ groups
+user2 sudo
+]0;user2@OmriDevops: /home/omri88/Desktop[01;32muser2@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ sudo su user1
+[sudo] password for user2: 
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+]0;user1@OmriDevops: /home/omri88/Desktop[01;32muser1@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ sudo su user2
+[sudo] password for user1: 
+]0;user2@OmriDevops: /home/omri88/Desktop[01;32muser2@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ su omri88
+Password: 
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ su user1
+Password: 
+]0;user1@OmriDevops: /home/omri88/Desktop[01;32muser1@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ sudop[K [K[K[K[K[Ksudo touch a
+]0;user1@OmriDevops: /home/omri88/Desktop[01;32muser1@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ sudo useradd user6
+]0;user1@OmriDevops: /home/omri88/Desktop[01;32muser1@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ user [Kdel user6[1@s[C[1@u[1@d[1@o[1@ 
+]0;user1@OmriDevops: /home/omri88/Desktop[01;32muser1@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ su omri88
+Password: 
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ sudo useradd user6
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ sudo userdel user6
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ sudo userdel user6add[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K usr[Ker1
+Password: 
+]0;user1@OmriDevops: /home/omri88/Desktop[01;32muser1@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ sudo visudo
+[?2004h[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;34H(B[0;7m[ Reading... ](B[m[22;32H(B[0;7m[ Read 30 lines ](B[m[H(B[0;7m  GNU nano 4.8                    /etc/sudoers.tmp                              [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[2d[39;49m[36m#[3d# This file MUST be edited with the 'visudo' command as root.[4d#[5d# Please consider adding local content in /etc/sudoers.d/ instead of[6d# directly modifying this file.[7d#[8d# See the man page for details on how to write a sudoers file.[9d#[10d[39m(B[mDefaults[10;17Henv_reset[11dDefaults[11;17Hmail_badpass[12dDefaults[12;17Hsecure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:(B[0;7m>[14;1H(B[0m[36m# Host alias specification[16d# User alias specification[18d# Cmnd alias specification[20d# User privilege specification[21d[39m(B[mroot    ALL=(ALL:ALL) ALL[2d[?12l[?25h[?25l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l7[2;21r8
+[1;24r[21;1H[?12l[?25h[?25l7[2;21r8
+[1;24r[21;1H[36m# Members of the admin group may gain root privileges[39m(B[m[?12l[?25h[?25l7[2;22r8[22d
+[1;24r[21;1H%admin ALL=(ALL) ALL[K[?12l[?25h[?25l7[2;22r8[22d
+[1;24r[21;1H[?12l[?25h[?25l7[2;22r8[22d
+[1;24r[21;1H[36m# Allow members of group sudo to execute any command[39m(B[m[?12l[?25h[?25l7[2;22r8[22d
+[1;24r[21;1H%sudo   ALL=(ALL:ALL) ALL[?12l[?25h[?25l7[2;22r8[22d
+[1;24r[21;1H[?12l[?25h[?25l7[2;22r8[22d
+[1;24r[21;1H[36m# See sudoers(5) for more information on "#include" directives:[39m(B[m[?12l[?25h[?25l7[2;22r8[22d
+[1;24r[21;1H[?12l[?25h[?25l7[2;22r8[22d
+[1;24r[21;1H[36m#includedir /etc/sudoers.d[39m(B[m[?12l[?25h[?25l7[2;22r8[22d
+[1;24r[21;1H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l7[2;22r8M[1;24r[2;1HDefaults[2;17Hsecure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:(B[0;7m>[2;1H(B[m[?12l[?25h[?25l7[2;21r8M[1;24r[2;1HDefaults[2;17Hmail_badpass[?12l[?25h[?25l7[2;22r8M[1;24r[2;1HDefaults[2;17Henv_reset[?12l[?25h[?25l7[2;21r8M[1;24r[2;1H[36m#[39m(B[m[?12l[?25h[?25l7[2;22r8M[1;24r[2;1H[36m# See the man page for details on how to write a sudoers file.[39m(B[m[?12l[?25h[?25l7[2;21r8M[1;24r[2;1H[36m#[39m(B[m[?12l[?25h[?25l7[2;21r8M[1;24r[2;1H[36m# directly modifying this file.[39m(B[m[?12l[?25h[?25l7[2;22r8M[1;24r[2;1H[36m# Please consider adding local content in /etc/sudoers.d/ instead of[39m(B[m[?12l[?25h[?25l7[2;21r8M[1;24r[2;1H[36m#[39m(B[m[?12l[?25h[?25l7[2;21r8M[1;24r[2;1H[36m# This file MUST be edited with the 'visudo' command as root.[39m(B[m[?12l[?25h[?25l7[2;22r8M[1;24r[2;1H[36m#[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l7[2;22r8[22d
+[1;24r[21;1H[?12l[?25h[?25l7[2;22r8[22d
+[1;24r[21;1H[36m# Members of the admin group may gain root privileges[39m(B[m[?12l[?25h[?25l7[2;22r8[22d
+[1;24r[21;1H%admin ALL=(ALL) ALL[?12l[?25h[?25l7[2;22r8[22d
+[1;24r[21;1H[?12l[?25h[?25l7[2;22r8[22d
+[1;24r[21;1H[36m# Allow members of group sudo to execute any command[39m(B[m[?12l[?25h[?25l7[2;22r8[22d
+[1;24r[21;1H%sudo   ALL=(ALL:ALL) ALL[?12l[?25h[?25l7[2;22r8[22d
+[1;24r[21;1H[?12l[?25h[?25l7[2;22r8[22d
+[1;24r[21;1H[36m# See sudoers(5) for more information on "#include" directives:[39m(B[m[?12l[?25h[?25l7[2;22r8[22d
+[1;24r[21;1H[?12l[?25h[?25l7[2;22r8[22d
+[1;24r[21;1H[36m#includedir /etc/sudoers.d[39m(B[m[?12l[?25h[?25l7[2;22r8[22d
+[1;24r[21;1H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[23d[J[24d[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>[?2004lvisudo: /etc/sudoers.tmp unchanged
+]0;user1@OmriDevops: /home/omri88/Desktop[01;32muser1@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ exit
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ exit
+]0;user1@OmriDevops: /home/omri88/Desktop[01;32muser1@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ exit
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ exit
+exit
+]0;user2@OmriDevops: /home/omri88/Desktop[01;32muser2@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ exit
+exit
+]0;user1@OmriDevops: /home/omri88/Desktop[01;32muser1@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ su omri88
+Password: 
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ exit
+exit
+]0;user1@OmriDevops: /home/omri88/Desktop[01;32muser1@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ exit
+]0;user2@OmriDevops: /home/omri88/Desktop[01;32muser2@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ sudo su user1
+]0;user1@OmriDevops: /home/omri88/Desktop[01;32muser1@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ su omri88do su user2[4P omri88
+Password: 
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ exit
+]0;user1@OmriDevops: /home/omri88/Desktop[01;32muser1@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ exit
+]0;user2@OmriDevops: /home/omri88/Desktop[01;32muser2@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ exit
+]0;user1@OmriDevops: /home/omri88/Desktop[01;32muser1@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ exit
+]0;user2@OmriDevops: /home/omri88/Desktop[01;32muser2@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ exit
+]0;user1@OmriDevops: /home/omri88/Desktop[01;32muser1@OmriDevops[00m:[01;34m/home/omri88/Desktop[00m$ exit
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ exit
+
+Script done on 2024-10-13 12:32:46+03:00 [COMMAND_EXIT_CODE="0"]

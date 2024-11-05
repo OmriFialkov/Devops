@@ -1,0 +1,75 @@
+Script started on 2024-10-17 23:24:35+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ su - omri1
+Password: 
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+]0;omri1@OmriDevops: ~[01;32momri1@OmriDevops[00m:[01;34m~[00m$ pwd
+/home/omri1
+]0;omri1@OmriDevops: ~[01;32momri1@OmriDevops[00m:[01;34m~[00m$ ls
+jo  jo2  omri1.txt  omri2.txt  omri.txt  typescript
+]0;omri1@OmriDevops: ~[01;32momri1@OmriDevops[00m:[01;34m~[00m$ groups
+omri1 sudo
+]0;omri1@OmriDevops: ~[01;32momri1@OmriDevops[00m:[01;34m~[00m$ sudo cp -ar /home/omri1 /mnt/drive1[K[K[K[K[K[K[K/new/drive1[K[K[K[K[K[K[K[Kwdrive1
+[sudo] password for omri1: 
+]0;omri1@OmriDevops: ~[01;32momri1@OmriDevops[00m:[01;34m~[00m$ cd /mntnewdrive1[C/newdrive1
+]0;omri1@OmriDevops: /mnt/newdrive1[01;32momri1@OmriDevops[00m:[01;34m/mnt/newdrive1[00m$ ls
+[0m[01;34momri1[0m
+]0;omri1@OmriDevops: /mnt/newdrive1[01;32momri1@OmriDevops[00m:[01;34m/mnt/newdrive1[00m$ cd omri1
+]0;omri1@OmriDevops: /mnt/newdrive1/omri1[01;32momri1@OmriDevops[00m:[01;34m/mnt/newdrive1/omri1[00m$ ls
+jo  jo2  omri1.txt  omri2.txt  omri.txt  typescript
+]0;omri1@OmriDevops: /mnt/newdrive1/omri1[01;32momri1@OmriDevops[00m:[01;34m/mnt/newdrive1/omri1[00m$ cd ..
+]0;omri1@OmriDevops: /mnt/newdrive1[01;32momri1@OmriDevops[00m:[01;34m/mnt/newdrive1[00m$ ls -ltr
+total 4
+drwxr-xr-x 2 omri1 omri1 4096 Oct 17 23:25 [0m[01;34momri1[0m
+]0;omri1@OmriDevops: /mnt/newdrive1[01;32momri1@OmriDevops[00m:[01;34m/mnt/newdrive1[00m$ cd ~
+]0;omri1@OmriDevops: ~[01;32momri1@OmriDevops[00m:[01;34m~[00m$ pwd
+/home/omri1
+]0;omri1@OmriDevops: ~[01;32momri1@OmriDevops[00m:[01;34m~[00m$ cd..[K[K ..
+]0;omri1@OmriDevops: /home[01;32momri1@OmriDevops[00m:[01;34m/home[00m$ pw[K[Kls
+[0m[01;34momri1[0m  [01;34momri3[0m  [01;34momri88[0m
+]0;omri1@OmriDevops: /home[01;32momri1@OmriDevops[00m:[01;34m/home[00m$ rm -r omri[1@s[1@u[1@d[1@o[1@ [C[C[C[C[C[C[C[C[C[C1
+]0;omri1@OmriDevops: /home[01;32momri1@OmriDevops[00m:[01;34m/home[00m$ sudo rm -r omri1ls[K
+[0m[01;34momri3[0m  [01;34momri88[0m
+]0;omri1@OmriDevops: /home[01;32momri1@OmriDevops[00m:[01;34m/home[00m$ ln -s /mnt/newdrive1/omri1 /home/omri1[1@s[1@u[1@d[1@o[1@ 
+]0;omri1@OmriDevops: /home[01;32momri1@OmriDevops[00m:[01;34m/home[00m$ sudo ln -s /mnt/newdrive1/omri1 /home/omri1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[0m[01;36momri1[0m  [01;34momri3[0m  [01;34momri88[0m
+]0;omri1@OmriDevops: /home[01;32momri1@OmriDevops[00m:[01;34m/home[00m$ ls -ltr
+total 8
+drwxr-xr-x  2 omri3  omri3  4096 Oct 17 14:19 [0m[01;34momri3[0m
+drwxr-xr-x 17 omri88 omri88 4096 Oct 17 23:20 [01;34momri88[0m
+lrwxrwxrwx  1 root   root     20 Oct 17 23:27 [01;36momri1[0m -> [01;34m/mnt/newdrive1/omri1[0m
+]0;omri1@OmriDevops: /home[01;32momri1@OmriDevops[00m:[01;34m/home[00m$ cd omrmi1[K[K1[K[K1[Ki1
+]0;omri1@OmriDevops: ~[01;32momri1@OmriDevops[00m:[01;34m~[00m$ pwd
+/home/omri1
+]0;omri1@OmriDevops: ~[01;32momri1@OmriDevops[00m:[01;34m~[00m$ touch 2ndtry.txt
+]0;omri1@OmriDevops: ~[01;32momri1@OmriDevops[00m:[01;34m~[00m$ cd /mnt/newdrive1
+]0;omri1@OmriDevops: /mnt/newdrive1[01;32momri1@OmriDevops[00m:[01;34m/mnt/newdrive1[00m$ ls
+[0m[01;34momri1[0m
+]0;omri1@OmriDevops: /mnt/newdrive1[01;32momri1@OmriDevops[00m:[01;34m/mnt/newdrive1[00m$ cd omri1
+]0;omri1@OmriDevops: /mnt/newdrive1/omri1[01;32momri1@OmriDevops[00m:[01;34m/mnt/newdrive1/omri1[00m$ k[Kls
+2ndtry.txt  jo  jo2  omri1.txt  omri2.txt  omri.txt  typescript
+]0;omri1@OmriDevops: /mnt/newdrive1/omri1[01;32momri1@OmriDevops[00m:[01;34m/mnt/newdrive1/omri1[00m$ rm omri1[K*.txt
+]0;omri1@OmriDevops: /mnt/newdrive1/omri1[01;32momri1@OmriDevops[00m:[01;34m/mnt/newdrive1/omri1[00m$ rm omri*.txtls[K
+2ndtry.txt  jo  jo2  typescript
+]0;omri1@OmriDevops: /mnt/newdrive1/omri1[01;32momri1@OmriDevops[00m:[01;34m/mnt/newdrive1/omri1[00m$ cd ~
+]0;omri1@OmriDevops: ~[01;32momri1@OmriDevops[00m:[01;34m~[00m$ pwd
+/home/omri1
+]0;omri1@OmriDevops: ~[01;32momri1@OmriDevops[00m:[01;34m~[00m$ ls
+2ndtry.txt  jo  jo2  typescript
+]0;omri1@OmriDevops: ~[01;32momri1@OmriDevops[00m:[01;34m~[00m$ cd ..
+]0;omri1@OmriDevops: /home[01;32momri1@OmriDevops[00m:[01;34m/home[00m$ ls -ltr
+total 8
+drwxr-xr-x  2 omri3  omri3  4096 Oct 17 14:19 [0m[01;34momri3[0m
+drwxr-xr-x 17 omri88 omri88 4096 Oct 17 23:20 [01;34momri88[0m
+lrwxrwxrwx  1 root   root     20 Oct 17 23:27 [01;36momri1[0m -> [01;34m/mnt/newdrive1/omri1[0m
+]0;omri1@OmriDevops: /home[01;32momri1@OmriDevops[00m:[01;34m/home[00m$ df -h /home/omri1
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdb         25G   48K   24G   1% /mnt/newdrive1
+]0;omri1@OmriDevops: /home[01;32momri1@OmriDevops[00m:[01;34m/home[00m$ df -h /mnt/newdrive1/omri1
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdb         25G   48K   24G   1% /mnt/newdrive1
+]0;omri1@OmriDevops: /home[01;32momri1@OmriDevops[00m:[01;34m/home[00m$ logout
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ exit
+
+Script done on 2024-10-17 23:34:05+03:00 [COMMAND_EXIT_CODE="0"]

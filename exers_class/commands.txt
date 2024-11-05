@@ -1,0 +1,45 @@
+cp my_project/notes.txt /home/omri88/Desktop 
+copying the text file that is named notes.txt from the dir my_project that im currently in to the Desktop.
+
+
+mv notes.txt project_notes.txt 
+changing the file name to add project in the beginning of it.
+
+
+mkdir "copy code" 
+create 1 Dir that its name his copy code and not 2 dirs with the names: copy , code.
+
+rm a* a1 a2 a3
+
+echo "Welcome To Linux" > my_file.txt
+
+echo "learning redirection" >> my_file.txt
+
+ls omri.txt 2> error.txt
+
+ls /tmp &> output.txt
+
+echo -e "hey class \t hello boys \nfuck you"
+
+echo $HOME
+
+echo -n "hey"
+
+grep "automation" sample.txt > results.txt
+
+echo "heyyy" > filetest1.txt && echo "wassup?" >> filetest1.txt && grep -c "Linux" sample.txt >> filetest1.txt
+
+find . -type f -name "*.txt" | xargs grep -c "error" | awk -F: '{print $2}' | awk '{sum += $1} END {print sum}'
+
+echo "hey" >> hey.txt 2>> errorhey.txt 
+
+ctrl alt t - open terminal home dir
+
+sudo groupadd useradd tom 
+-m creates user with home dir
+-s specifies /bin/bash for user shell
+usermod -aG groupname -username - to group sudo use root
+sudo passwd username - specifies new password for a user
+sudo groupdel groupname - same for user - the user is created with a group by the same name as his primary group. 
+chsh -s shellname - change shell for a user that is logged on.
+

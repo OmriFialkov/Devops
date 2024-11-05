@@ -1,0 +1,16 @@
+Script started on 2024-10-15 11:00:40+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ free -m
+              total        used        free      shared  buff/cache   available
+Mem:           3911         702        2530           6         678        2983
+Swap:          2559           0        2559
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ s[Kdu -sh /w[Kswapfile
+2.1G	/swapfile
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ du -sh /swapfile1
+513M	/swapfile1
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ du -sh /swapfile1[K[9Pfree -m
+              total        used        free      shared  buff/cache   available
+Mem:           3911         702        2530           6         678        2983
+Swap:          2559           0        2559
+]0;omri88@OmriDevops: ~/Desktop[01;32momri88@OmriDevops[00m:[01;34m~/Desktop[00m$ exit
+
+Script done on 2024-10-15 11:01:06+03:00 [COMMAND_EXIT_CODE="0"]
