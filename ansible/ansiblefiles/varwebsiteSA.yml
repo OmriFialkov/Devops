@@ -1,10 +1,10 @@
 ---
 - name: Set up Apache web server and deploy custom index.html
-  hosts: web_servers          # Define target hosts or group here
+  hosts: myvm          # Define target hosts or group here
   become: yes                 # Elevate privileges with sudo if necessary
 
   vars:
-    html_file_path: "/path/to/your/index.html"  # Define variable for file path
+    html_file_path: "/home/omri88/Devops/ansible/ansiblefiles/index.html"  # Define variable for file path
 
   tasks:
     - name: Install Apache web server
